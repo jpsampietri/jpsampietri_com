@@ -1,3 +1,5 @@
+'use client'; 
+
 import React from 'react';
 import Link from 'next/link';
 // Imports from your UI layer
@@ -6,6 +8,7 @@ import { Typography } from '../ui/Typography';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
+import { useTheme } from '@/lib/theme/ThemeContext';
 
 
 const FooterLinks = [
@@ -25,8 +28,9 @@ const FooterLinks = [
 ];
 
 export const Footer: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className={`surface ${theme} pt-16 pb-8`}>
       <div className="container mx-auto px-4 max-w-7xl">
 
         {/* Main Footer Content Grid */}
@@ -55,10 +59,10 @@ export const Footer: React.FC = () => {
         {/* Copyright and Bottom Line */}
         <div className="pt-8 flex justify-between items-center flex-wrap">
           <Typography variant="caption" className="!text-gray-500">
-            &copy; {new Date().getFullYear()} [Your Brand Name]. All Rights Reserved.
+            &copy; {new Date().getFullYear()} JPSampietri. All Rights Reserved.
           </Typography>
           <Typography variant="caption" className="!text-gray-500 mt-2 sm:mt-0">
-            Boilerplate developed using Next.js and Tailwind CSS.
+            Powered by Next.js and Tailwind CSS. Enhanced with Gemini.
           </Typography>
         </div>
       </div>

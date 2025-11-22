@@ -13,11 +13,6 @@
   --color-secondary-darker1: #213D5E;
   --color-secondary-darker2: #15293E;
 
-  /* Neutrals */
-  --color-gray-50: #F9FAFB;
-  --color-gray-900: #111827;
-  
-  /* Status Colors */
   --color-success: #10B981;
   --color-success-dark: #059669;
   --color-warning: #FBBF24;
@@ -36,9 +31,6 @@
   --color-gray-700: #BDBDBD;
   --color-gray-800: #E0E0E0;
   --color-gray-900: #F5F5F5;
-
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,8 +40,60 @@
   }
 }
 
-body {
-  background: var(--gray-900);
-  color: var(--gray-50);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .surface.light {
+    @apply bg-gray-900 text-gray-100 transition-colors duration-300;
+    .subtext {
+      @apply text-secondary-lighter1;
+    }
+  }
+
+  .surface.dark {
+    @apply bg-gray-100 text-gray-900;
+    .subtext {
+      @apply text-secondary-lighter2;
+    }
+  }
+
+  .variant-surface.light {
+    @apply bg-gray-800 text-gray-100 transition-colors duration-300;
+    .subtext {
+      @apply text-gray-500;
+    }
+  }
+
+  .variant-surface.dark {
+    @apply bg-gray-200 text-gray-900;
+    .subtext {
+      @apply text-gray-600;
+    }
+  }
+
+  .primary-surface.light {
+    @apply bg-primary-lighter1 text-gray-900 transition-colors duration-300;
+    .subtext {
+      @apply text-gray-800;
+    }
+  }
+
+  .primary-surface.dark {
+    @apply bg-primary-darker1 text-gray-900;
+    .subtext {
+      @apply text-gray-600;
+    }
+  }
+
+  .secondary-surface.light {
+    @apply bg-secondary-lighter1 text-gray-900 transition-colors duration-300;
+    .subtext {
+      @apply text-gray-800;
+    }
+  }
+
+  .secondary-surface.dark {
+    @apply bg-secondary-darker1 text-gray-900;
+    .subtext {
+      @apply text-gray-700;
+    }
+  }
 }

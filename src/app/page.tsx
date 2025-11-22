@@ -1,5 +1,6 @@
-import { Navbar } from '@/components/templates/Navbar'; // <-- NEW IMPORT
+import { Navbar } from '@/components/templates/Navbar'; 
 import { HeroSection } from '@/components/templates/HeroSection';
+import { BrandGrid } from '@/components/templates/BrandGrid';
 import { FeatureGrid } from '@/components/templates/FeatureGrid';
 import { CallToAction } from '@/components/templates/CallToAction';
 import { Footer } from '@/components/templates/Footer';
@@ -13,6 +14,9 @@ export default function LandingPage() {
 
       {/* 2. Hero Section */}
       <HeroSection />
+
+      {/* 3. Brand Gateway Grid (NEW - Proxy to specialized sites) */}
+      <BrandGrid />
 
       {/* 3. Core Principles / Value Proposition */}
       <FeatureGrid />

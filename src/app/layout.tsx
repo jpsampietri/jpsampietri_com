@@ -1,6 +1,8 @@
 import './globals.css';
 import { baiJamjuree, questrial } from '../lib/fonts';
 import { ReduxProvider } from '../lib/redux/provider';
+import { ThemeProvider } from '@/lib/theme/ThemeContext'; 
+import { useTheme } from '@/lib/theme/ThemeContext';
 
 export default function RootLayout({
   children,
@@ -8,15 +10,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // Inject custom font variables into the html tag
     <html
-      lang="en"
       className={`${baiJamjuree.variable} ${questrial.variable} antialiased`}
     >
       <body>
-        <ReduxProvider> 
-          {children}
-        </ReduxProvider>
+        <ThemeProvider>
+          <ReduxProvider> 
+            {children}
+          </ReduxProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

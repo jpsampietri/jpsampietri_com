@@ -1,11 +1,12 @@
+'use client'; 
+
 import { Card } from '../ui/Card';
 import { Typography } from '../ui/Typography';
 
-// NEW IMPORTS: Using Material Icons from @mui/icons-material
-// We choose icons that convey the original concepts:
-import FlashOnIcon from '@mui/icons-material/FlashOn'; // Operational Efficiency (Zap)
-import ViewModuleIcon from '@mui/icons-material/ViewModule'; // Measured Innovation (LayoutGrid)
-import MemoryIcon from '@mui/icons-material/Memory'; // Simplicity/Minimalism (Cpu)
+import FlashOnIcon from '@mui/icons-material/FlashOn'; 
+import ViewModuleIcon from '@mui/icons-material/ViewModule';
+import MemoryIcon from '@mui/icons-material/Memory'; 
+import { useTheme } from '@/lib/theme/ThemeContext';
 
 const featuresData = [
   {
@@ -25,36 +26,33 @@ const featuresData = [
   },
 ];
 
+
 export const FeatureGrid: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
   return (
-    <section className="py-16 md:py-24 bg-gray-900 text-gray-50">
+    <section className={`surface ${theme} py-16 md:py-24`}>
       <div className="container mx-auto px-4 max-w-7xl">
         
-        {/* Section Header */}
         <div className="text-center mb-12">
-          <Typography variant="h2" className="!text-5xl">
+          <Typography variant="h2" className="!text-5xl highlight">
             Our Guiding Principles
           </Typography>
-          <Typography variant="body" className="mt-4 text-xl max-w-2xl mx-auto">
+          <Typography variant="body" className="subtext mt-4 text-xl max-w-2xl mx-auto">
             Our work is built on core values that ensure precision, stability, and measurable ROI for every client.
           </Typography>
         </div>
 
-        {/* Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featuresData.map((feature, index) => (
             <Card key={index} isElevated={true} className="text-left flex flex-col space-y-4">
               
-              {/* Icon - Material Icons use the 'component' syntax */}
-              {/* We use a Tailwind class to enforce size and color */}
               <feature.icon className="h-8 w-8 text-primary" sx={{ fontSize: '32px' }} />
               
-              {/* Title, Description remain the same */}
               <Typography variant="h2" className="!text-2xl !mt-0">
                 {feature.title}
               </Typography>
               
-              <Typography variant="body" className="!text-base">
+              <Typography variant="body" className="subtext !text-base">
                 {feature.description}
               </Typography>
             </Card>
