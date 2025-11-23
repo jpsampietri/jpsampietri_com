@@ -1,8 +1,6 @@
-import './globals.css';
 import { baiJamjuree, questrial } from '../lib/fonts';
 import { ReduxProvider } from '../lib/redux/provider';
 import { ThemeProvider } from '@/lib/theme/ThemeContext'; 
-import { useTheme } from '@/lib/theme/ThemeContext';
 
 export default function RootLayout({
   children,

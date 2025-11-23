@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #621327;
+  --color-primary-lighter1: #841F38;
+  --color-primary-lighter2: #93314A;
+  --color-primary-darker1: #4F1221;
+  --color-primary-darker2: #330A13;
+
+  --color-secondary: #485A5B;
+  --color-secondary-lighter1: #5A7172;
+  --color-secondary-lighter2: #769293;
+  --color-secondary-darker1: #364445;
+  --color-secondary-darker2: #242D2E;
+
+  --color-success: #10B981;
+  --color-success-dark: #059669;
+  --color-warning: #FBBF24;
+  --color-warning-dark: #D97706;
+  --color-error: #EF4444;
+  --color-error-dark: #B91C1C;
+
+  --color-gray-50: #0A0E1F;
+  --color-gray-100: #0F152E;
+  --color-gray-200: #1C2136;
+  --color-gray-300: #34394E;
+  --color-gray-400: #3E4253;
+
+  --color-gray-500: #A3ACB8;
+  --color-gray-600: #BAC0CA;
+  --color-gray-700: #CACFD6;
+  --color-gray-800: #DCDFE4;
+  --color-gray-900: #F4F5F6;
+}
+
+@layer components {
+  .light {
+    .surface {
+      @apply bg-gray-800 text-gray-100 transition-colors duration-300;
+
+      .subtext {
+        @apply text-secondary-lighter1;
+      }
+    }
+
+    .variant-surface {
+      @apply bg-gray-900 text-gray-100 transition-colors duration-300;
+
+      .subtext {
+        @apply text-gray-400;
+      }
+    }
+
+    .primary-surface {
+      @apply bg-primary-lighter1 text-gray-900 transition-colors duration-300;
+
+      .subtext {
+        @apply text-gray-800;
+      }
+    }
+
+    .secondary-surface {
+      @apply bg-secondary-lighter1 text-gray-900 transition-colors duration-300;
+
+      .subtext {
+        @apply text-gray-800;
+      }
+    }
+  }
+
+  .dark {
+    .surface {
+      @apply bg-gray-100 text-gray-900;
+
+      .subtext {
+        @apply text-secondary-lighter2;
+      }
+    }
+
+    .variant-surface {
+      @apply bg-gray-200 text-gray-900;
+
+      .subtext {
+        @apply text-gray-600;
+      }
+    }
+
+    .primary-surface {
+      @apply bg-primary-darker1 text-gray-900;
+
+      .subtext {
+        @apply text-gray-600;
+      }
+    }
+
+    .secondary-surface {
+      @apply bg-secondary-darker1 text-gray-900;
+
+      .subtext {
+        @apply text-gray-700;
+      }
+    }
+  }
+}

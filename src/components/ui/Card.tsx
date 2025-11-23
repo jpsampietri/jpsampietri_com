@@ -12,7 +12,7 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 export const Card: React.FC<CardProps> = ({ children, className = '', isElevated = false, ...props }) => {
   const { theme, toggleTheme } = useTheme();
 
-  const baseClasses = `variant-surface ${theme} p-8 rounded-lg border border-gray-400/50 transition-shadow duration-300`;
+  const baseClasses = `variant-surface p-8 rounded-lg border border-gray-400/50 transition-shadow duration-300`;
   
   // Use professional shadow system
   const elevationClasses = isElevated 

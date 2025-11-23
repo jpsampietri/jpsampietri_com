@@ -1,31 +1,26 @@
-import { Navbar } from '@/components/templates/Navbar'; 
-import { HeroSection } from '@/components/templates/HeroSection';
-import { BrandGrid } from '@/components/templates/BrandGrid';
-import { FeatureGrid } from '@/components/templates/FeatureGrid';
-import { CallToAction } from '@/components/templates/CallToAction';
-import { Footer } from '@/components/templates/Footer';
+'use client';
 
+import './global.css';
+import { Navbar } from '@/components/templates/base/Navbar';
+import { ActionGrid } from '@/components/templates/ActionGrid';
+import { Footer } from '@/components/templates/base/Footer';
+import { HeroSection } from '@/components/templates/HeroSection';
+import { navbarProps } from '../../public/assets/data/global/navbar';
+import { brandProps } from '../../public/assets/data/global/brand';
+import { footerProps } from '../../public/assets/data/global/footer';
+import { heroProps } from '../../public/assets/data/global/hero';
 export default function LandingPage() {
+
   return (
     <main className="flex flex-col min-h-screen">
 
-      {/* 1. Header/Navigation Bar (Placed at the very top) */}
-      <Navbar /> 
+      <Navbar homePath={navbarProps.homePath} logoPath={navbarProps.logoPath} navItems={navbarProps.navItems} />
 
-      {/* 2. Hero Section */}
-      <HeroSection />
+      <HeroSection id={heroProps.id} header={heroProps.header} subtext={heroProps.subtext} imagePath={heroProps.imagePath} actions={heroProps.actions} />
 
-      {/* 3. Brand Gateway Grid (NEW - Proxy to specialized sites) */}
-      <BrandGrid />
+      <ActionGrid id={brandProps.id} header={brandProps.header} subtext={brandProps.subtext} brands={brandProps.brands} />
 
-      {/* 3. Core Principles / Value Proposition */}
-      <FeatureGrid />
-
-      {/* 4. Contact/Final Call-to-Action */}
-      <CallToAction />
-
-      {/* 5. Footer */}
-      <Footer />
+      <Footer brandName={footerProps.brandName} slogan={footerProps.slogan} copyright={footerProps.copyright} socialLinks={footerProps.socialLinks} />
 
     </main>
   );

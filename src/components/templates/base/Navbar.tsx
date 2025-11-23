@@ -2,44 +2,47 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Button } from '../ui/Button';
-import { Typography } from '../ui/Typography';
+import { Button } from '../../ui/Button';
+import { Typography } from '../../ui/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-import { ThemeSwitcher } from '../ui/ThemeSwitcher';
+import { ThemeSwitcher } from '../../ui/ThemeSwitcher';
 import { useTheme } from '@/lib/theme/ThemeContext';
 
-const navItems = [
-  { name: 'Services', href: '#services' },
-  { name: 'Principles', href: '#principles' },
-  { name: 'Case Studies', href: '#case-studies' },
-  { name: 'About', href: '#about' },
-];
+interface NavItem {
+  name: string;
+  href: string;
+}
 
-const PRIMARY_LOGO_PATH = '/assets/logos/jpsampietri_tech.svg';
+interface NavbarProps {
+  homePath: string
+  logoPath: string;
+  navItems: NavItem[];
+}
+
 const LOGO_WIDTH = 180;
 const LOGO_HEIGHT = 50;
 
-export const Navbar: React.FC = (params) => {
+export const Navbar: React.FC<NavbarProps> = ({ homePath, logoPath, navItems }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className={`sticky top-0 z-50 surface ${theme} shadow-md`}>
+    <header className={`sticky top-0 z-50 surface shadow-md`}>
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex justify-between items-center h-20">
 
-          <Link href="/" className="flex items-center">
+          <a href={homePath} className="flex items-center">
             <Image
-              src={PRIMARY_LOGO_PATH}
-              alt="[Your Primary Brand] Logo"
+              src={logoPath}
+              alt="Logo"
               width={LOGO_WIDTH}
               height={LOGO_HEIGHT}
               priority
               className="h-14 w-auto"
             />
-          </Link>
+          </a>
 
           <nav className="hidden lg:flex space-x-8 items-center">
             {navItems.map((item) => (
@@ -51,12 +54,6 @@ export const Navbar: React.FC = (params) => {
             ))}
 
             <ThemeSwitcher />
-
-            <Link href="#consultation" passHref>
-              <Button variant="primary" className="ml-4 py-2 px-6">
-                Consultation
-              </Button>
-            </Link>
           </nav>
 
           <button
@@ -78,11 +75,7 @@ export const Navbar: React.FC = (params) => {
               </Typography>
             </Link>
           ))}
-          <Link href="#consultation" passHref className="pt-4">
-            <Button variant="primary" className="w-full" onClick={() => setIsOpen(false)}>
-              Consultation
-            </Button>
-          </Link>
+          <ThemeSwitcher />
         </div>
       </div>
     </header>
