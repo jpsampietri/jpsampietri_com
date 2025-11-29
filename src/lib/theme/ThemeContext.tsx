@@ -19,7 +19,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
     useEffect(() => {
-        const root = window.document.documentElement;
         const body = window.document.body;
 
         body.classList.remove(theme === 'dark' ? 'light' : 'dark');

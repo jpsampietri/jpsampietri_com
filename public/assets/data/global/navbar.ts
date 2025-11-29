@@ -11,7 +11,7 @@ interface NavbarProps {
 
 export const navbarProps:NavbarProps = {
   homePath: '/',
-  logoPath: '/assets/logos/global/signature_color_light.svg',
+  logoPath: '/assets/logos/global/jpsampietri_logo_primary.svg',
   navItems: [
     { name: 'About', href: '#hero' },
     { name: 'Brands', href: '#brands' },

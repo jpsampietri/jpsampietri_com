@@ -3,16 +3,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { Typography } from '../../ui/Typography';
-import { useTheme } from '@/lib/theme/ThemeContext';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import { ElementType } from 'react';
 
 type MuiIconComponent = ElementType<SvgIconProps>;
-
-interface Feature {
-  icon: MuiIconComponent;
-  
-}
 
 interface SocialLink {
   icon: MuiIconComponent;
@@ -28,7 +22,6 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ brandName, slogan, copyright, socialLinks }) => {
-  const { theme, toggleTheme } = useTheme();
   const linkComponents = socialLinks.map((socialLink, index) => {
     return (
       <Link key={index} href={socialLink.href} aria-label={socialLink.label} target="_blank"><socialLink.icon className="h-6 w-6 hover:text-primary transition-colors" /></Link>

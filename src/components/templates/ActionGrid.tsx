@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Card } from '../ui/Card';
 import { Typography } from '../ui/Typography';
 import { useTheme } from '@/lib/theme/ThemeContext';
@@ -23,7 +22,7 @@ interface ActionProps {
 }
 
 export const ActionGrid: React.FC<ActionProps> = ({ id, header, subtext, brands }) => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <section id={id} className={`surface py-16 md:py-24`}>

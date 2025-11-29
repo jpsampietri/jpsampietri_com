@@ -2,13 +2,11 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Button } from '../../ui/Button';
 import { Typography } from '../../ui/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { ThemeSwitcher } from '../../ui/ThemeSwitcher';
-import { useTheme } from '@/lib/theme/ThemeContext';
 
 interface NavItem {
   name: string;
@@ -26,7 +24,6 @@ const LOGO_HEIGHT = 50;
 
 export const Navbar: React.FC<NavbarProps> = ({ homePath, logoPath, navItems }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className={`sticky top-0 z-50 surface shadow-md`}>

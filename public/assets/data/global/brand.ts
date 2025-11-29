@@ -46,5 +46,19 @@ export const brandProps:ActionProps = {
       description: 'What if...',
       href: '/tyto',
     },
+    {
+      name: 'Bookshelf',
+      logoPathLight: '/assets/logos/global/jpsampietri_logo_contrast_light.svg',
+      logoPathDark: '/assets/logos/global/jpsampietri_logo_contrast_dark.svg',
+      description: 'Opinions about things I read',
+      href: '/tyto',
+    },
+    {
+      name: 'DIY Projects',
+      logoPathLight: '/assets/logos/global/jpsampietri_logo_contrast_light.svg',
+      logoPathDark: '/assets/logos/global/jpsampietri_logo_contrast_dark.svg',
+      description: 'When I can\'t find what I want',
+      href: '/tyto',
+    },
   ]
 };

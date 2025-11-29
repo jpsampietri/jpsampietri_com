@@ -12,7 +12,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  let baseClasses =
+  const baseClasses =
     'inline-flex items-center justify-center rounded-lg px-8 py-3 transition-colors duration-200 focus:outline-none focus:ring-4';
   let variantClasses = '';
 

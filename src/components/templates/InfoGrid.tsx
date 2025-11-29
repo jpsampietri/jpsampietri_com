@@ -2,17 +2,10 @@
 
 import { Card } from '../ui/Card';
 import { Typography } from '../ui/Typography';
-
-import { useTheme } from '@/lib/theme/ThemeContext';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import { ElementType } from 'react';
 
 type MuiIconComponent = ElementType<SvgIconProps>;
-
-interface Feature {
-  icon: MuiIconComponent;
-  
-}
 
 interface Info {
   icon: MuiIconComponent;
@@ -28,7 +21,6 @@ interface InfoProps {
 }
 
 export const InfoGrid: React.FC<InfoProps> = ({ id, header, subtext, infos }) => {
-  const { theme, toggleTheme } = useTheme();
   return (
     <section id={id} className={`surface py-16 md:py-24`}>
       <div className="container mx-auto px-4 max-w-7xl">
