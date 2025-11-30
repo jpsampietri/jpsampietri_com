@@ -1,8 +1,8 @@
 import { NavbarProps } from "@/components/templates/base/Navbar";
 
 export const navbarProps:NavbarProps = {
-  homePath: '/global',
-  logoPath: '/assets/logos/global/jpsampietri_logo_primary.svg',
+  homePath: '/spotting',
+  logoPath: '/assets/logos/spotting/jpsampietri_spotting_contrast_light.svg',
   navItems: [
     { name: 'About', href: '#hero' },
     { name: 'Brands', href: '#brands' },

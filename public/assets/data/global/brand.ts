@@ -41,7 +41,7 @@ export const brandProps:ActionProps = {
       href: '/tyto',
       target: '_self',
     },
-    {
+/*    {
       type: 'image',
       imagePathLight: '/assets/logos/global/jpsampietri_logo_contrast_light.svg',
       imagePathDark: '/assets/logos/global/jpsampietri_logo_contrast_dark.svg',
@@ -59,5 +59,6 @@ export const brandProps:ActionProps = {
       href: '/tyto',
       target: '_self',
     },
+*/
   ]
 };

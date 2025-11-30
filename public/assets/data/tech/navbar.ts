@@ -9,6 +9,6 @@ export const navbarProps:NavbarProps = {
     { name: 'Experience', href: '/tech#experience' },
     { name: 'Technologies', href: '/tech#techmap' },
     { name: 'Contents', href: '/tech/contents' },
-    { name: 'Global', href: '/' },
+    { name: 'Global', href: '/global' },
   ]
 }

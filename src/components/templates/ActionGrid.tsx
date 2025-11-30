@@ -1,6 +1,6 @@
 'use client';
 
-import React, { act } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { Card } from '../ui/Card';
 import { Typography } from '../ui/Typography';

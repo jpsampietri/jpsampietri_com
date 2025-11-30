@@ -2,30 +2,20 @@
 
 import './global.css';
 import { Navbar } from '@/components/templates/base/Navbar';
-import { ActionGrid } from '@/components/templates/ActionGrid';
-import { Footer } from '@/components/templates/base/Footer';
-import { HeroSection } from '@/components/templates/HeroSection';
-import { navbarProps } from '../../public/assets/data/global/navbar';
-import { brandProps } from '../../public/assets/data/global/brand';
-import { footerProps } from '../../public/assets/data/global/footer';
-import { heroProps } from '../../public/assets/data/global/hero';
+import { navbarProps } from '../../public/assets/data/globalComingSoon/navbar';
+import { footerProps } from '../../public/assets/data/globalComingSoon/footer';
 import { Banner } from '@/components/templates/Banner';
+import { FooterEaster } from '@/components/templates/base/FooterEaster';
 export default function LandingPage() {
-/*
-      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' imagePath='/assets/logos/global/jpsampietri_logo_primary.svg' />
-
-*/
 
   return (
     <main className="flex flex-col min-h-screen">
 
       <Navbar homePath={navbarProps.homePath} logoPath={navbarProps.logoPath} navItems={navbarProps.navItems} />
 
-      <HeroSection id={heroProps.id} header={heroProps.header} subtext={heroProps.subtext} imagePath={heroProps.imagePath} actions={heroProps.actions} />
+      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' imagePath='/assets/logos/global/jpsampietri_logo_primary.svg' />
 
-      <ActionGrid id={brandProps.id} header={brandProps.header} subtext={brandProps.subtext} actions={brandProps.actions} />
-
-      <Footer brandName={footerProps.brandName} slogan={footerProps.slogan} copyright={footerProps.copyright} socialLinks={footerProps.socialLinks} />
+      <FooterEaster brandName={footerProps.brandName} slogan={footerProps.slogan} copyright={footerProps.copyright} socialLinks={footerProps.socialLinks} />
 
     </main>
   );

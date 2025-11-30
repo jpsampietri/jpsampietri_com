@@ -5,7 +5,6 @@ import { Navbar } from '@/components/templates/base/Navbar';
 import { Footer } from '@/components/templates/base/Footer';
 import { navbarProps } from '../../../../public/assets/data/tech/navbar';
 import { footerProps } from '../../../../public/assets/data/tech/footer';
-import { InfoGrid } from '@/components/templates/InfoGrid';
 import { aiDisclaimerProps } from '../../../../public/assets/data/tech/aiDisclaimer';
 import { ActionGrid } from '@/components/templates/ActionGrid';
 import { contentProps } from '../../../../public/assets/data/tech/contents';
