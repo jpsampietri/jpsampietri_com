@@ -1,12 +1,12 @@
 import React from 'react';
 import { Typography } from '../ui/Typography';
 
-interface Marker {
+export interface Marker {
     point: number;
     label: string;
 }
 
-interface TimelineProps {
+export interface TimelineProps {
     id: string;
     header: string;
     subtext: string;

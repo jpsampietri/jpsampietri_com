@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Card } from '../ui/Card';
 import { Typography } from '../ui/Typography';
 
-interface DataMap {
+export interface DataMapItem {
     logoPath: string;
     sort: number;
     label: string;
@@ -13,11 +13,11 @@ interface DataMap {
     textClass?: string;
 }
 
-interface DataMapProps {
+export interface DataMapProps {
     id: string;
     header: string;
     subtext: string;
-    dataMapContent: DataMap[];
+    dataMapContent: DataMapItem[];
 }
 
 export const DataMapGrid: React.FC<DataMapProps> = ({ id, header, subtext, dataMapContent }) => {

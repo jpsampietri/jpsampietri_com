@@ -1,15 +1,4 @@
-interface CTAAction {
-  text: string;
-  href: string;
-  variant?: 'primary' | 'secondary' | 'ghost';
-}
-
-interface CTAProps {
-  id: string;
-  header: string;
-  subtext: string;
-  actions: CTAAction[];
-}
+import { CTAProps } from "@/components/templates/CallToAction";
 
 export const ctaProps:CTAProps = {
   id: 'cta',

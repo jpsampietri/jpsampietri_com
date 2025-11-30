@@ -3,7 +3,6 @@
 import './tech.css';
 import { Navbar } from '@/components/templates/base/Navbar';
 import { HeroSection } from '@/components/templates/HeroSection';
-import { InfoGrid } from '@/components/templates/InfoGrid';
 import { CallToAction } from '@/components/templates/CallToAction';
 import { Footer } from '@/components/templates/base/Footer';
 import { navbarProps } from '../../../public/assets/data/tech/navbar';
@@ -15,6 +14,7 @@ import { Timeline } from '@/components/templates/Timeline';
 import { experienceProps } from '../../../public/assets/data/tech/experience';
 import { DataMapGrid } from '@/components/templates/DataMapGrid';
 import { technologyDataMap } from '../../../public/assets/data/tech/technologies';
+import { ActionGrid } from '@/components/templates/ActionGrid';
 export default function LandingPage() {
 
   return (
@@ -24,7 +24,7 @@ export default function LandingPage() {
 
       <HeroSection id={heroProps.id} header={heroProps.header} subtext={heroProps.subtext} imagePath={heroProps.imagePath} actions={heroProps.actions} />
 
-      <InfoGrid id={featureProps.id} header={featureProps.header} subtext={featureProps.subtext} infos={featureProps.infos} />
+      <ActionGrid id={featureProps.id} header={featureProps.header} subtext={featureProps.subtext} actions={featureProps.actions} />
 
       <Timeline id={experienceProps.id} header={experienceProps.header} subtext={experienceProps.subtext} total={experienceProps.total} current={experienceProps.current} currentLabel={experienceProps.currentLabel} markers={experienceProps.markers} />
 

@@ -1,3 +1,5 @@
+import { DataMapProps } from "@/components/templates/DataMapGrid";
+
 /*
 Year by year
 2015 - java, postgres, linux, jira
@@ -12,23 +14,6 @@ Year by year
 2024 - Salesforce Sales cloud, Salesforce Service cloud, Salesforce Apex, Salesforce LWC
 2025 - python, Salesforce Sales cloud, Salesforce Service cloud, Salesforce Apex, Salesforce LWC
 */
-interface DataMap {
-    logoPath: string;
-    sort: number;
-    label: string;
-    loader: number;
-    tag: string;
-    bgClass?: string;
-    textClass?: string;
-}
-
-interface DataMapProps {
-    id: string;
-    header: string;
-    subtext: string;
-    dataMapContent: DataMap[];
-}
-
 interface TechnologyKnown {
     level: KnowledgeLevel;
     logoPath: string;

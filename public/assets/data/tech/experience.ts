@@ -1,18 +1,4 @@
-interface Marker {
-    point: number;
-    label: string;
-}
-
-interface TimelineProps {
-    id: string;
-    header: string;
-    subtext: string;
-    total: number;
-    current: number;
-    currentLabel: string;
-    markers: Marker[];
-
-}
+import { TimelineProps } from "@/components/templates/Timeline";
 
 export const experienceProps: TimelineProps = {
     id: 'experience',
@@ -29,10 +15,6 @@ export const experienceProps: TimelineProps = {
         {
             point: 10,
             label: '10 years',
-        },
-        {
-            point: 15,
-            label: '15 years',
         },
     ]
 }

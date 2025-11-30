@@ -6,17 +6,17 @@ import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { Typography } from '../ui/Typography';
 
-interface CTAAction {
+export interface Action {
   text: string;
   href: string;
   variant?: 'primary' | 'secondary' | 'ghost';
 }
 
-interface CTAProps {
+export interface CTAProps {
   id: string;
   header: string;
   subtext: string;
-  actions: CTAAction[];
+  actions: Action[];
 }
 
 export const CallToAction: React.FC<CTAProps> = ({ id, header, subtext, actions }) => {
@@ -36,7 +36,7 @@ export const CallToAction: React.FC<CTAProps> = ({ id, header, subtext, actions 
 
         <Typography
           variant="h2"
-          className="!text-white !font-bold !text-4xl"
+          className="!font-bold !text-4xl"
         >
           {header}
         </Typography>

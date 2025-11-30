@@ -9,7 +9,12 @@ import { navbarProps } from '../../public/assets/data/global/navbar';
 import { brandProps } from '../../public/assets/data/global/brand';
 import { footerProps } from '../../public/assets/data/global/footer';
 import { heroProps } from '../../public/assets/data/global/hero';
+import { Banner } from '@/components/templates/Banner';
 export default function LandingPage() {
+/*
+      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' imagePath='/assets/logos/global/jpsampietri_logo_primary.svg' />
+
+*/
 
   return (
     <main className="flex flex-col min-h-screen">
@@ -18,7 +23,7 @@ export default function LandingPage() {
 
       <HeroSection id={heroProps.id} header={heroProps.header} subtext={heroProps.subtext} imagePath={heroProps.imagePath} actions={heroProps.actions} />
 
-      <ActionGrid id={brandProps.id} header={brandProps.header} subtext={brandProps.subtext} brands={brandProps.brands} />
+      <ActionGrid id={brandProps.id} header={brandProps.header} subtext={brandProps.subtext} actions={brandProps.actions} />
 
       <Footer brandName={footerProps.brandName} slogan={footerProps.slogan} copyright={footerProps.copyright} socialLinks={footerProps.socialLinks} />
 

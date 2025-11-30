@@ -1,16 +1,4 @@
-interface HeroAction {
-  text: string;
-  href: string;
-  variant?: 'primary' | 'secondary' | 'ghost';
-}
-
-interface HeroProps {
-  id: string;
-  header: string;
-  subtext: string;
-  imagePath: string;
-  actions: HeroAction[];
-}
+import { HeroProps } from "@/components/templates/HeroSection";
 
 export const heroProps:HeroProps = {
   id: 'hero',

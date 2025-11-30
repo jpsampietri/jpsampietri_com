@@ -8,13 +8,13 @@ import { ElementType } from 'react';
 
 type MuiIconComponent = ElementType<SvgIconProps>;
 
-interface SocialLink {
+export interface SocialLink {
   icon: MuiIconComponent;
   href: string;
   label: string;
 }
 
-interface FooterProps {
+export interface FooterProps {
   brandName: string;
   slogan: string;
   copyright: string;

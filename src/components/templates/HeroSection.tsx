@@ -7,13 +7,13 @@ import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { Typography } from '../ui/Typography';
 
-interface HeroAction {
+export interface HeroAction {
   text: string;
   href: string;
   variant?: 'primary' | 'secondary' | 'ghost';
 }
 
-interface HeroProps {
+export interface HeroProps {
   id: string;
   header: string;
   subtext: string;

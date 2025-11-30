@@ -8,12 +8,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { ThemeSwitcher } from '../../ui/ThemeSwitcher';
 
-interface NavItem {
+export interface NavItem {
   name: string;
   href: string;
 }
 
-interface NavbarProps {
+export interface NavbarProps {
   homePath: string
   logoPath: string;
   navItems: NavItem[];

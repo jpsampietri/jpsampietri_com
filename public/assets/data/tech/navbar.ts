@@ -1,13 +1,4 @@
-interface NavItem {
-  name: string;
-  href: string;
-}
-
-interface NavbarProps {
-  homePath: string
-  logoPath: string;
-  navItems: NavItem[];
-}
+import { NavbarProps } from "@/components/templates/base/Navbar";
 
 export const navbarProps:NavbarProps = {
   homePath: '/tech',
