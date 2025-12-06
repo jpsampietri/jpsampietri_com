@@ -13,7 +13,7 @@ export default function LandingPage() {
 
       <Navbar homePath={navbarProps.homePath} logoPath={navbarProps.logoPath} navItems={navbarProps.navItems} />
 
-      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' imagePath={navbarProps.logoPath} />
+      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' subtextClass='ghost' imagePath={navbarProps.logoPath} />
 
       <Footer brandName={footerProps.brandName} slogan={footerProps.slogan} copyright={footerProps.copyright} socialLinks={footerProps.socialLinks} />
 

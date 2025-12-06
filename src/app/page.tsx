@@ -13,7 +13,7 @@ export default function LandingPage() {
 
       <Navbar homePath={navbarProps.homePath} logoPath={navbarProps.logoPath} navItems={navbarProps.navItems} />
 
-      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' imagePath='/assets/logos/global/jpsampietri_logo_primary.svg' />
+      <Banner id='coming-soon' header='Coming soon...' subtext='Be carefull with spoilers' subtextClass='ghost' imagePath='/assets/logos/global/jpsampietri_logo_primary.svg' />
 
       <FooterEaster brandName={footerProps.brandName} slogan={footerProps.slogan} copyright={footerProps.copyright} socialLinks={footerProps.socialLinks} />
 
