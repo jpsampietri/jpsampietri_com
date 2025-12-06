@@ -1,6 +1,6 @@
 'use client';
 
-import './photo.css';
+import '../global.css';
 import { Navbar } from '@/components/templates/base/Navbar';
 import { navbarProps } from '../../../public/assets/data/photo/navbar';
 import { footerProps } from '../../../public/assets/data/photo/footer';

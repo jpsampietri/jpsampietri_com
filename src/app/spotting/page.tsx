@@ -1,6 +1,6 @@
 'use client';
 
-import './spotting.css';
+import '../global.css';
 import { Navbar } from '@/components/templates/base/Navbar';
 import { navbarProps } from '../../../public/assets/data/spotting/navbar';
 import { footerProps } from '../../../public/assets/data/spotting/footer';

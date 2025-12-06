@@ -68,39 +68,45 @@ const generateActionProps = (contents: Content[]) => {
 export const contentProps: ActionProps = generateActionProps(
   [
     {
+      title: 'Portões Abertos AFA',
+      description: '08/2022',
+      platform: 'onedrive',
+      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgDqm6nK8r1wRq5TCVxlPz4GAZ_FxgxhWrV5ZtcGe932BbM?e=4TkQ0f',
+    },
+    {
+      title: 'Campeonato Nacional de Acrobacia - CBA',
+      description: '07/2019',
+      platform: 'onedrive',
+      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgAZtC0TSKE7QJbznOQuJ6t3AfgrjVdRP7VyzwoTYlJ2tfI?e=eudOLu',
+    },
+    {
+      title: 'Salão do automóvel de São Paulo',
+      description: '11/2018',
+      platform: 'onedrive',
+      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgD76R_Ir2wCSrRc0OSx-xipAbjbHJbdZq_j_4m6gj1Xt_A?e=qrBXNP',
+    },
+    {
       title: '#20PEA',
-      description: '',
+      description: '09/2018',
       platform: 'onedrive',
       href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgDyXN3M4Kz0SZ-meNepzzcjAee5SpFsyjJ7r1K-55vT7JI?e=3LrgGJ',
     },
     {
-      title: 'Portões Abertos AFA 2018',
-      description: '',
+      title: 'Portões Abertos AFA',
+      description: '08/2018',
       platform: 'onedrive',
       href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgAT_JzmsEmDSJWcEpeW5a0sAYDPAkFXkxMHdc0qBOUstRM?e=xRXHGK',
-    },
-    {
-      title: '#23PEA',
-      description: '',
-      platform: 'onedrive',
-      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgB5ntVfswYDTIeI3HxJGFHAAYZVbuVW87WVYeh6jH8qjcY?e=QUwxKi',
-    },
-    {
-      title: 'Portões Abertos AFA 2019',
-      description: '',
-      platform: 'onedrive',
-      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgCqr4mBBdPKRKE5tRzyhZxtAXQs4EhX6Q-nxozLRnfWgMc?e=a3tTJ2',
-    },
-    {
-      title: 'Encontro de antigos',
-      description: '',
-      platform: 'onedrive',
-      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgBSwmXE49KmQ6UYV4OGZw6pAQg_k0vOo6iqh927iMnUuEc?e=ELVfRb',
     },
     {
       title: 'V8 & cia Paulínia',
       description: '',
       platform: 'onedrive',
-      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgAN70SKi_foQapPjc8tU7MkAadV1DUJmo0LgzcjSrLAZkY?e=Jv6pgQ',
+      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgAN70SKi_foQapPjc8tU7MkAadV1DUJmo0LgzcjSrLAZkY',
+    },
+    {
+      title: 'Variados',
+      description: '',
+      platform: 'onedrive',
+      href: 'https://1drv.ms/f/c/a0cbbf4ea26068a8/IgCMEivDIs5cQ4heEaMR6QzMAeFSf7xJS3knRL6Et1T4JyQ?e=CEJCWS',
     },
   ]);
