@@ -2,8 +2,8 @@ import { ActionProps } from "@/components/templates/ActionGrid";
 
 export const brandProps:ActionProps = {
   id: 'brands',
-  header: 'Four Facets of a Single Drive',
-  subtext: 'Select a path to dive deeper into the discipline that interests you most',
+  header: 'Facets of a Single Drive',
+  subtext: 'Select a path to dive deeper into the discipline that interests you most:',
   actions: [
     {
       type: 'image',
