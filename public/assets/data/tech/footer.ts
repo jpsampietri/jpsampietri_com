@@ -4,7 +4,7 @@ import { FooterProps } from '@/components/templates/base/Footer';
 
 export const footerProps:FooterProps = {
   brandName: 'JPSampietri',
-  slogan: 'Computer Scientist and Digital Automation specialist focused on operational efficiency and measured innovation.',
+  slogan: 'Computer Scientist | MBA in Business Process and Digital Automation',
   copyright: 'JPSampietri',
   socialLinks: [
     { icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jpsampietri/', label: 'LinkedIn'},

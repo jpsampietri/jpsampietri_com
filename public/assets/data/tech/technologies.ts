@@ -187,7 +187,7 @@ const technologiesKnown: TechnologyKnown[] = [
 const generateTechDataMap = (technologiesKnown: TechnologyKnown[]) => {
     const techDataMap: DataMapProps = {
         id: 'techmap',
-        header: 'Technology Proficiency Map',
+        header: 'Technical Proficiency Matrix',
         subtext: 'A precise overview of my technical expertise, quantified by practical experience',
         dataMapContent: [
         ]

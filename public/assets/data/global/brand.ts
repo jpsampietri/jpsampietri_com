@@ -32,7 +32,7 @@ export const brandProps:ActionProps = {
       href: '/spotting',
       target: '_self',
     },
-    {
+/*    {
       type: 'image',
       imagePathLight: '/assets/logos/tyto/tyto_innovation_contrast_light.svg',
       imagePathDark: '/assets/logos/tyto/tyto_innovation_contrast_dark.svg',

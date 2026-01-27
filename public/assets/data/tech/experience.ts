@@ -2,11 +2,11 @@ import { TimelineProps } from "@/components/templates/Timeline";
 
 export const experienceProps: TimelineProps = {
     id: 'experience',
-    header: 'Over a Decade of End-to-End SDLC Execution',
-    subtext: 'From initial architecture to deployment and continuous system optimization',
+    header: 'Over a Decade of Refined Methodology',
+    subtext: 'Excellence is built through eleven years of studying the full Software Development Life Cycle (SDLC). From initial abstraction to continuous optimization, my approach is rooted in deep understanding.',
     total: 15,
-    current: 10,
-    currentLabel: '10+ years',
+    current: 11,
+    currentLabel: '11+ years',
     markers: [
         {
             point: 5,
