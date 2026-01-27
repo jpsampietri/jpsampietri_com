@@ -15,9 +15,9 @@ export default function LandingPage() {
   return (
     <main className="flex flex-col min-h-screen">
 
-      <Navbar homePath={navbarProps.homePath} logoPath={navbarProps.logoPath} navItems={navbarProps.navItems} />
+      <Navbar homePath={navbarProps.homePath} logoLightPath={navbarProps.logoLightPath} logoDarkPath={navbarProps.logoDarkPath} navItems={navbarProps.navItems} />
 
-      <Banner id='coming-soon' header='JPSampietri Photo' subtext='The beauty is on the details' subtextClass='' imagePath={navbarProps.logoPath} />
+      <Banner id='coming-soon' header='JPSampietri Photo' subtext='The beauty is on the details' subtextClass='' imageLightPath={navbarProps.logoLightPath} imageDarkPath={navbarProps.logoDarkPath}/>
 
       <PhotoGrid id={highlightProps.id} header={highlightProps.header} subtext={highlightProps.subtext} photos={highlightProps.photos} />
 

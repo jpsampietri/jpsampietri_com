@@ -13,7 +13,7 @@ export default function LandingPage() {
   return (
     <main className="flex flex-col min-h-screen">
 
-      <Navbar homePath={navbarProps.homePath} logoPath={navbarProps.logoPath} navItems={navbarProps.navItems} />
+      <Navbar homePath={navbarProps.homePath} logoLightPath={navbarProps.logoLightPath} logoDarkPath={navbarProps.logoDarkPath} navItems={navbarProps.navItems} />
 
       <ActionGrid id={aiDisclaimerProps.id} header={aiDisclaimerProps.header} subtext={aiDisclaimerProps.subtext} actions={aiDisclaimerProps.actions}/>
 

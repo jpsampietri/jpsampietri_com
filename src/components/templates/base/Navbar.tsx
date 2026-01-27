@@ -6,6 +6,7 @@ import { Typography } from '../../ui/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
+import { useTheme } from '@/lib/theme/ThemeContext';
 import { ThemeSwitcher } from '../../ui/ThemeSwitcher';
 
 export interface NavItem {
@@ -15,14 +16,17 @@ export interface NavItem {
 
 export interface NavbarProps {
   homePath: string
-  logoPath: string;
+  logoLightPath: string;
+  logoDarkPath: string;
   navItems: NavItem[];
 }
 
 const LOGO_WIDTH = 180;
 const LOGO_HEIGHT = 50;
 
-export const Navbar: React.FC<NavbarProps> = ({ homePath, logoPath, navItems }) => {
+export const Navbar: React.FC<NavbarProps> = ({ homePath, logoLightPath, logoDarkPath, navItems }) => {
+  const { theme } = useTheme();
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -32,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ homePath, logoPath, navItems }) 
 
           <a href={homePath} className="flex items-center">
             <Image
-              src={logoPath}
+              src={theme === 'light' ? logoLightPath : logoDarkPath}
               alt="Logo"
               width={LOGO_WIDTH}
               height={LOGO_HEIGHT}

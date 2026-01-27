@@ -2,7 +2,8 @@ import { NavbarProps } from "@/components/templates/base/Navbar";
 
 export const navbarProps:NavbarProps = {
   homePath: '/tech',
-  logoPath: '/assets/logos/tech/jpsampietri_tech.svg',
+  logoLightPath: '/assets/logos/tech/jpsampietri_tech.svg',
+  logoDarkPath: '/assets/logos/tech/jpsampietri_tech.svg',
   navItems: [
     { name: 'About', href: '/tech#about' },
     { name: 'Value', href: '/tech#value' },

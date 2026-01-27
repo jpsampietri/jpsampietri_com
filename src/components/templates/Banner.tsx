@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-
+import { useTheme } from '@/lib/theme/ThemeContext';
 import { Typography } from '../ui/Typography';
 
 export interface BannerProps {
@@ -10,19 +10,22 @@ export interface BannerProps {
   header: string;
   subtext: string;
   subtextClass: string;
-  imagePath: string;
+  imageLightPath: string;
+  imageDarkPath: string;
 }
 
 const IMAGE_WIDTH = 200;
 const IMAGE_HEIGHT = 200;
 
-export const Banner: React.FC<BannerProps> = ({ id, header, subtext, imagePath, subtextClass }) => {
+export const Banner: React.FC<BannerProps> = ({ id, header, subtext, imageLightPath, imageDarkPath, subtextClass }) => {
+  const { theme } = useTheme();
+
   return (
     <section id={id} className={`surface py-12 md:py-18`}>
       <div className="container mx-auto text-center center-items">
         <div className="relative mb-8 flex justify-center items-center mx-auto p-20">
           <Image
-            src={imagePath}
+            src={theme === 'light' ? imageLightPath : imageDarkPath}
             alt="Abstract illustration of data architecture and digital flow"
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
